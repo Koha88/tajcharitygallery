@@ -28,3 +28,11 @@ body{font-family:'Noto Kufi Arabic',Arial,sans-serif}
 }
 .viewer-img{position:relative;touch-action:pan-y}.photo-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:4;width:48px;height:48px;border:1px solid #ffffff55;border-radius:50%;background:#050b08aa;color:white;font-size:28px;display:grid;place-items:center}.prev-photo{right:16px}.next-photo{left:16px}
 @media(max-width:800px){.photo-nav{width:44px;height:44px;background:#050b08cc}.prev-photo{right:10px}.next-photo{left:10px}}
+@media(max-width:800px){
+  dialog{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;overflow:hidden;background:#06130e}
+  .viewer-img{width:100%;height:55dvh;min-height:0;float:none;background:#000;touch-action:pan-y}.viewer-img img{display:block;width:100%;height:100%;object-fit:contain}
+  .viewer-copy{box-sizing:border-box;width:100%;height:45dvh;min-height:0;margin:0;padding:16px 18px 12px;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto 1fr 58px;gap:5px 12px;overflow:hidden}
+  .viewer-count{grid-column:1;grid-row:1;align-self:center}.viewer-copy h3{grid-column:1;grid-row:2;margin:0;font-size:24px}.viewer-copy p{display:none}.download-photo{grid-column:2;grid-row:1 / span 2;align-self:center;margin:0;padding:10px 14px}
+  .thumbs{display:flex!important;grid-column:1 / -1;grid-row:4;margin:0;padding:4px 2px;gap:8px;overflow-x:auto;overflow-y:hidden;direction:rtl;scrollbar-width:none}.thumbs::-webkit-scrollbar{display:none}.thumb{flex:0 0 50px;height:50px}.thumbs .thumb img{display:block;width:50px;height:50px;object-fit:cover;border-radius:7px}
+  .next{display:none}.close{position:fixed;top:max(12px,env(safe-area-inset-top));left:12px}
+}
